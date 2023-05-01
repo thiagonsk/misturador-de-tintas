@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Misturador de Tintas</title>
+</head>
+<body>
+    <h1>Escolha Suas Cores.</h1>
+
+    <section id="escolha">
+        <!--paleta 1 -->
+        <div class="conteiner">
+            <div class="cor" id="cor1"></div>
+            <div class="paleta">
+                <div>
+                    <p>R:</p>
+                    <input type="range" name="r-cor" id="r1" min="0" max="255" onchange="atualizaVal('r-cor', this.value), paleta(1);" value="0">
+                    <p id="r-cor">0</p>
+                </div>
+                <div>
+                    <p>G:</p>
+                    <input type="range" name="g-cor" id="g1" min="0" max="255" onchange="atualizaVal('g-cor', this.value), paleta(1);" value="0">
+                    <p id="g-cor">0</p>
+                </div>
+                <div>
+                    <p>B:</p>
+                    <input type="range" name="b-cor" id="b1" min="0" max="255" onchange="atualizaVal('b-cor', this.value), paleta(1);" value="0">
+                    <p id="b-cor">0</p>
+                </div>
+            </div>
+        </div>
+        <!--paleta 2 -->
+        <div class="conteiner">
+            <div class="cor" id="cor2"></div>
+            <div class="paleta">
+                <div>
+                    <p>R:</p>
+                    <input type="range" name="r-cor" id="r2" min="0" max="255" onchange="atualizaVal('r-cor2', this.value), paleta(2);" value="255">
+                    <p id="r-cor2">255</p>
+                </div>
+                <div>
+                    <p>G:</p>
+                    <input type="range" name="g-cor" id="g2" min="0" max="255" onchange="atualizaVal('g-cor2', this.value), paleta(2);" value="255">
+                    <p id="g-cor2">255</p>
+                </div>
+                <div>
+                    <p>B:</p>
+                    <input type="range" name="b-cor" id="b2" min="0" max="255" onchange="atualizaVal('b-cor2', this.value), paleta(2);" value="255">
+                    <p id="b-cor2">255</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <button>Misturar</button>
+
+    <!--resultado -->
+    <section id="resultado">
+        <div class="unidade">
+            <h3>RGB: </h3><P id="rgb">255 , 255, 255</P>
+        </div>
+        <div id="res">
+
+        </div>
+        <div class="unidade" id="hexa">
+            <h3>HEX: </h3><P id="hex">#FFFFFF</P>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

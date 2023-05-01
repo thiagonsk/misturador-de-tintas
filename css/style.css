@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+    background-image: url(../images/pexels-evie-shaffer-2748757.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    min-height: 98vh;
+}
+/* : ! () {} # & | % > < "" @ */
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+}
+
+#escolha {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+}
+
+#escolha input{
+    outline: none;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 22vw;
+    height: 25vh;
+    padding: 0.7rem;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.329);
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+.conteiner p {
+    display: inline;
+}
+
+.cor {
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.39);
+    background-color: white;
+}
+
+#cor1 {
+    background-color: black;
+}
+
+.paleta {
+    min-width: 65%;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.7rem;
+    background-color: rgb(55, 216, 55);
+    color: whitesmoke;
+    text-shadow: 0 0 5px black;
+}
+
+/*resultado*/
+#resultado {
+    width: 100vw;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} 
+
+#res {
+    background-color: transparent;
+    height: 30vh;
+    width: 30%;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    margin: 2rem;
+}
+
+.unidade {
+    min-width: 8rem;
+    font-size: 1.3em;
+    color: black;
+    text-shadow: 0 0 5px white;
+    background-color: rgba(255, 255, 255, 0.651);
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 5PX;
+    padding: 0 5PX;
+}
+
+#hexa {
+    margin-left: 1rem;
+}
+
+/* : ! () {} # & | % > < "" @ */
